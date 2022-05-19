@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Footer } from './Footer';
 
 const user = {
   first_name: 'Yurii',
@@ -9,11 +10,12 @@ const user = {
 
 const App = () => (
     <div className="App"> 
-      <h1>Hello {user.first_name}</h1> 
+      <h1 className='header1'>Hello {user.first_name}</h1> 
       <h2>My short biography</h2>
       <p>{user.short_biography}</p>
       <hr />
       <p>{user.public_contacts}</p>
+      <Footer copyright='my'/>
     </div>
 )
 
